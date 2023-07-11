@@ -1,17 +1,14 @@
 import { Players } from "@rbxts/services";
-import { Children, Computed, New, Value } from "@rbxts/fusion";
-import { Controller } from "@flamework/core";
+import { Children, New } from "@rbxts/fusion";
 import { UIComponentInit, UIComponents } from "./Classes/UIComponent";
 
 
 const PlayerGui = Players.LocalPlayer.WaitForChild("PlayerGui");
 
-const StatesState = Value(true);
-
 const PlayerStats = () => { 
     const stateGui = New("ScreenGui")({
         Parent: PlayerGui,
-        Enabled: Computed(() => StatesState.get()),
+        Enabled: false,
         Name: "Statsclone",
 
         [Children]: [

@@ -1,13 +1,10 @@
-import { Controller, OnStart, OnInit, Modding } from "@flamework/core";
 import { Children, Computed, New, OnEvent, Value } from "@rbxts/fusion";
-import { CollectionService, Players } from "@rbxts/services";
-import ApplicationButton from "client/UIComponents/Windows/ApplicationButtonComponent";
-import AmasanApplication from "client/UIComponents/Windows/Applications/AmasanApplication";
-import ChromeApplication from "client/UIComponents/Windows/Applications/ChromeApplication";
-import RobloxStudioApplication from "client/UIComponents/Windows/Applications/RobloxStudioApplication";
-import Button from "client/UIComponents/Windows/ButtonComponent";
-import { Applications } from "client/UIComponents/Classes/ApplicationComponent";
-import { Events } from "client/network";
+import { Players } from "@rbxts/services";
+import ApplicationButton from "client/UIComponents/WindowsInterfaces/ApplicationButtonComponent";
+import AmasanApplication from "client/UIComponents/WindowsInterfaces/Applications/AmasanApplication";
+import ChromeApplication from "client/UIComponents/WindowsInterfaces/Applications/ChromeApplication";
+import RobloxStudioApplication from "client/UIComponents/WindowsInterfaces/Applications/RobloxStudioApplication";
+import { Applications } from "client/UIComponents/Classes/ApplicationComponent";;
 import UIComponent, { UIComponentInit, UIComponents } from "./Classes/UIComponent";
 
 
